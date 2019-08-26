@@ -11,14 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BasicControl@home');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', 'BasicControl@contact');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', 'BasicControl@about');
